@@ -6,29 +6,17 @@ import React, { useState } from 'react';
 
 export default function SigninScreen({navigation}){
 
-  const [email, setEmail] = useState('');
-  const [fullname, setFullName] = useState('');
-  const[telephone,setTelephone] = useState('')
-
-  const handleSignUp = () => {
-    // Implement your signup logic here
-    console.log('Email:', email);
-    console.log('Fullname:', fullname);
-    console.log('Telephone:', telephone);
-    // For demo purposes, navigate to HomeScreen
-    navigation.navigate('Home');
-  };
-
 return(
-    <View className="flex-1 items-center justify-center bg-[#F7941D]">
-     <View className="w-full bg-white h-[540px] mt-[133px] rounded-t-lg ">
+   
+   <View className="flex-1 items-center justify-center bg-[#F7941D]">
+      <View className="w-full flex-1 bg-white mt-[133px] rounded-t-lg">
         <View className="flex flex-row items-center justify-center mt-[10px]">
           <Text className="text-[40px] font-bold">Supa</Text>
           <Text className="text-[40px] font-bold text-[#F7941D]">Menu</Text>
         </View>
-        <View className ="items-center justify-center mt-[15px]">
-            <Text className=" font-bold text-blue-900">Welcome ...</Text>
-            <Text className=" font-bold text-stone-300">Please fill in the information </Text>
+        <View className="items-center justify-center mt-[15px]">
+          <Text className="font-bold text-blue-900">Welcome ...</Text>
+          <Text className="font-bold text-stone-300">Please fill in the information </Text>
         </View>
       <View style={styles.inputContainer}>
           <Ionicons
@@ -54,7 +42,7 @@ return(
                     onChangeText={(text) => setEmail(text)}
                   />
           </View>
-                <View style={styles.inputContainer}>
+          <View style={styles.inputContainer}>
                   <Ionicons
                     name="lock-closed-outline"
                     size={24}
@@ -88,10 +76,7 @@ return(
           >
             <Text className="text-white font-bold">Sign In</Text>
           </TouchableOpacity>
-          <View className="flex flex-row items-center justify-center mt-[10px]">
-          <Text className="text-[10px] text-stone-300 ">Don't have a account?</Text>
-          <Text className="text-[10px]  text-[#F7941D]">Register</Text>
-        </View>
+        
       </View>
      </View>
 
@@ -134,3 +119,8 @@ const styles = StyleSheet.create({
     borderTopRightRadius: 15,
   }
 });
+
+
+
+
+

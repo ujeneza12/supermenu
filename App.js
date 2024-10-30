@@ -6,6 +6,8 @@ import SignupScreen from './screens/SignUpScreen';
 import RestaurantScreen from './screens/RestaurantScreen';
 import ReviewScreen from './screens/ReviewScreen';
 import MenuScreen from './screens/MenuScreen';
+import ItemScreen from './screens/ItemScreen';
+
 
 
 
@@ -20,6 +22,8 @@ export default function App() {
         <Stack.Screen name="Restaurant"  component={RestaurantScreen} options={{ headerShown: false }}/>
         <Stack.Screen name="Review"  component={ReviewScreen} options={{ headerShown: false }}/>
         <Stack.Screen name="Menu"  component={MenuScreen} options={{ headerShown: false }}/>
+        <Stack.Screen name="Item"  component={ItemScreen} options={{ headerShown: false }}/>
+
 
 
         
