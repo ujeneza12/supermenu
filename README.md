@@ -8,9 +8,13 @@ The landing page displays a visually appealing menu of available drinks and dess
 **Tech Stack**
 
 Frontend:
+
 Tailwind CSS: For styling and layout.
+
 JavaScript: The core language for functionality.
+
 React Native: For building cross-platform mobile applications.
+
 Expo: For React Native-based mobile applications.
 
 **Icons:**
@@ -20,19 +24,20 @@ Ionicons: For a variety of user-friendly icons.
 
 To run this project locally, follow these steps:
 
-Clone the repository:
-
+**Clone the repository:**
 git clone https://github.com/ujeneza12/supermenu
-Navigate to the project directory:
+
+**Navigate to the project directory:**
 
 cd supermenu
 Install dependencies (For React Native-based mobile applications):
-
 npm install
-Run the development server:
+
+**Run the development server:**
 
 npm start
-If using Expo for React Native, you can run:
+
+**If using Expo for React Native, you can run:**
 
 expo start
 
