@@ -18,6 +18,7 @@ React Native: For building cross-platform mobile applications.
 Expo: For React Native-based mobile applications.
 
 **Icons:**
+
 Ionicons: For a variety of user-friendly icons.
 
 **Installation**
@@ -25,6 +26,7 @@ Ionicons: For a variety of user-friendly icons.
 To run this project locally, follow these steps:
 
 **Clone the repository:**
+
 git clone https://github.com/ujeneza12/supermenu
 
 **Navigate to the project directory:**
@@ -41,4 +43,5 @@ npm start
 
 expo start
 
-**Access the application:** Open your browser or mobile emulator and access the appropriate URL to view the home screen and details page.
+**Access the application:** 
+Open your browser or mobile emulator and access the appropriate URL to view the home screen and details page.
