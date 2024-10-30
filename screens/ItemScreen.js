@@ -23,16 +23,16 @@ const drinks = [
 const ItemScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
-     
+  
       <TouchableOpacity style={styles.backButton} onPress={() => navigation.goBack()} className="mt-[35px]">
-        <Ionicons name="arrow-back" size={24} color="orange"  />
+        <Ionicons name="arrow-back" size={24} color="orange" />
       </TouchableOpacity>
 
-      
+
       <Text className="text-2xl font-bold text-center mb-4">Choose Kigali</Text>
       <Text className="text-[19px] text-center mb-4 text-orange-300">Drinks</Text>
 
-     
+    
       <ScrollView style={styles.scrollView}>
         {drinks.map((drink, index) => (
           <View key={index} style={styles.drinkContainer}>
@@ -45,10 +45,30 @@ const ItemScreen = ({ navigation }) => {
         ))}
       </ScrollView>
 
-     
-      <TouchableOpacity style={styles.checkoutButton} onPress={() => {/* Handle checkout */}}>
+
+      <TouchableOpacity style={styles.checkoutButton} onPress={() => navigation.navigate('Check')}>
         <Text style={styles.checkoutButtonText}>Proceed to Checkout</Text>
       </TouchableOpacity>
+
+    
+      <View style={styles.bottomNav}>
+        <TouchableOpacity style={styles.navItem} onPress={() => navigation.navigate('Home')}>
+          <Ionicons name="home-outline" size={24} />
+         
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.navItem}>
+          <Ionicons name="notifications-outline" size={24}  />
+         
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.navItem}>
+          <Ionicons name="refresh-outline" size={24}  />
+          
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.navItem}>
+          <Ionicons name="cart-outline" size={24}  />
+          
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };
@@ -62,8 +82,6 @@ const styles = StyleSheet.create({
   backButton: {
     flexDirection: 'row',
     alignItems: 'center',
-
-   
   },
   scrollView: {
     width: '100%', 
@@ -91,15 +109,31 @@ const styles = StyleSheet.create({
     color: 'gray',
   },
   checkoutButton: {
-    backgroundColor: 'orange', // Changed to orange
+    backgroundColor: 'orange', 
     padding: 15,
     borderRadius: 5,
     alignItems: 'center',
     width: '100%', 
+    marginVertical: 40, 
   },
   checkoutButtonText: {
     color: '#fff',
     fontSize: 18,
+  },
+  bottomNav: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    paddingVertical: 6,
+    borderTopWidth: 1,
+    borderTopColor: '#ccc',
+    backgroundColor: '#fff',
+  },
+  navItem: {
+    alignItems: 'center',
+  },
+  navText: {
+    fontSize: 12,
+    color: 'orange',
   },
 });
 
